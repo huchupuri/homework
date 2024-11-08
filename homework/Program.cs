@@ -281,6 +281,26 @@ Console.WriteLine(time26[0] * 30 + time26[1] / 60 + time26[2] / 3600);
 //минутной стрелки, а также количество полных часов и полных минут.
 Console.WriteLine(27);
 double y27 = double.Parse(Console.ReadLine());
+double grad = y27 * 180 / Math.PI, min_grad, hours = 0, minutes = 0;
+for (int i = 0; i < 12; i++)
+{
+    if (grad - i * 30 < 30)
+    {
+        hours = i;
+        break;
+    }
+}
+min_grad = grad - hours * 30;
+for (int i = 0; i < 12; i++)
+{
+    if (min_grad - i * 6 < 6)
+    {
+        minutes = i;
+        break;
+    }
+}
+
+Console.WriteLine($"угол стрелки: {min_grad}, кол-во часов: {hours}, кол-во минут {minutes}");
 
 //28. Создать программу, которая будет выводить на экран меньшее по модулю из трёх
 //введённых пользователем вещественных чисел

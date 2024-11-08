@@ -1,19 +1,19 @@
-﻿////1
-//Console.WriteLine(1);
-//string name = Console.ReadLine();
-//Console.WriteLine($"привет,{name}");
+﻿//1
+Console.WriteLine(1);
+string name = Console.ReadLine();
+Console.WriteLine($"привет,{name}");
 
-////2
-//Console.WriteLine(2);
-//float[] nums = Console.ReadLine().Split(" ").Select(i => float.Parse(i)).ToArray();
-//try
-//{
-//    Console.WriteLine(nums[1] / nums[0]);
-//}
-//catch (Exception)
-//{
-//    Console.WriteLine("деление на 0");
-//}
+//2
+Console.WriteLine(2);
+float[] nums = Console.ReadLine().Split(" ").Select(i => float.Parse(i)).ToArray();
+try
+{
+    Console.WriteLine(nums[1] / nums[0]);
+}
+catch (Exception)
+{
+    Console.WriteLine("деление на 0");
+}
 
 //3
 Console.WriteLine(3);
